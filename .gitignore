@@ -1,0 +1,17 @@
+*.exe
+*.pdb
+*.suo
+*.cache
+*.7z
+/LogInjector/bin
+/LogInjector/obj
+/LogInjector/Cecil
+/LogInjectorApp/bin
+/LogInjectorApp/obj
+/LogInjectorTest/bin
+/LogInjectorTest/obj
+/SampleAssembly/bin
+/SampleAssembly/obj
+/SampleLogger/bin
+/SampleLogger/obj
+/TestResults

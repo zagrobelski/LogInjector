@@ -1,0 +1,51 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Express 2012 for Windows Desktop
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleAssembly", "SampleAssembly\SampleAssembly.csproj", "{26CA7B7D-3CEB-4F03-9707-C2AFB8497FE4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleLogger", "SampleLogger\SampleLogger.csproj", "{A6439F49-0B4D-4FCE-8AD0-9B782B4AE0BE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogInjectorTest", "LogInjectorTest\LogInjectorTest.csproj", "{CEA447FA-5BDC-4431-A84E-64D5C15CBBC8}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A6439F49-0B4D-4FCE-8AD0-9B782B4AE0BE} = {A6439F49-0B4D-4FCE-8AD0-9B782B4AE0BE}
+		{D6086E4C-014B-419D-B60B-E6D3044A682F} = {D6086E4C-014B-419D-B60B-E6D3044A682F}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogInjectorApp", "LogInjectorApp\LogInjectorApp.csproj", "{2CF9086B-AE51-40D3-B7F6-5106F9EFECB3}"
+	ProjectSection(ProjectDependencies) = postProject
+		{D6086E4C-014B-419D-B60B-E6D3044A682F} = {D6086E4C-014B-419D-B60B-E6D3044A682F}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogInjector", "LogInjector\LogInjector.csproj", "{D6086E4C-014B-419D-B60B-E6D3044A682F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{26CA7B7D-3CEB-4F03-9707-C2AFB8497FE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26CA7B7D-3CEB-4F03-9707-C2AFB8497FE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26CA7B7D-3CEB-4F03-9707-C2AFB8497FE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26CA7B7D-3CEB-4F03-9707-C2AFB8497FE4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6439F49-0B4D-4FCE-8AD0-9B782B4AE0BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6439F49-0B4D-4FCE-8AD0-9B782B4AE0BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6439F49-0B4D-4FCE-8AD0-9B782B4AE0BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6439F49-0B4D-4FCE-8AD0-9B782B4AE0BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CEA447FA-5BDC-4431-A84E-64D5C15CBBC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CEA447FA-5BDC-4431-A84E-64D5C15CBBC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CEA447FA-5BDC-4431-A84E-64D5C15CBBC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CEA447FA-5BDC-4431-A84E-64D5C15CBBC8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2CF9086B-AE51-40D3-B7F6-5106F9EFECB3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2CF9086B-AE51-40D3-B7F6-5106F9EFECB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2CF9086B-AE51-40D3-B7F6-5106F9EFECB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2CF9086B-AE51-40D3-B7F6-5106F9EFECB3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6086E4C-014B-419D-B60B-E6D3044A682F}.Debug|Any CPU.ActiveCfg = silverlight_Debug|Any CPU
+		{D6086E4C-014B-419D-B60B-E6D3044A682F}.Debug|Any CPU.Build.0 = silverlight_Debug|Any CPU
+		{D6086E4C-014B-419D-B60B-E6D3044A682F}.Release|Any CPU.ActiveCfg = silverlight_Release|Any CPU
+		{D6086E4C-014B-419D-B60B-E6D3044A682F}.Release|Any CPU.Build.0 = silverlight_Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
