@@ -6,7 +6,6 @@ namespace LogInjectorTest
     [TestClass]
     public class LogInjectorTest
     {
-        private static readonly string sample_assembly_name = "SampleAssembly";
         private static readonly string sample_class_name = "SampleAssembly.SampleClass";
         private static System.Type sample_class_type = null;
         private static System.Object sample_class_instance = null;
@@ -43,8 +42,8 @@ namespace LogInjectorTest
             ushort f = 66;
             uint g = 77;
             ulong h = 88;
-            float i = 99;
-            double j = 111;
+            float i = 99.9f;
+            double j = 1.1;
             bool k = true;
             char l = 'a';
             method_info.Invoke( sample_class_instance, new System.Object [] { a, b, c, d, e, f, g, h, i, j, k, l } );
