@@ -53,10 +53,10 @@ namespace LogInjector
 
             foreach ( Mono.Cecil.TypeDefinition type_definition in injectible_assembly.MainModule.Types )
             {
-                bool is_method_logable = type_definition.CustomAttributes.Any( a => a.AttributeType.FullName == log_attribute_name );
+                bool is_type_logable = type_definition.CustomAttributes.Any( a => a.AttributeType.FullName == log_attribute_name );
                 foreach ( Mono.Cecil.MethodDefinition method_definition in type_definition.Methods )
                 {
-                    is_method_logable = is_method_logable || method_definition.CustomAttributes.Any( a => a.AttributeType.FullName == log_attribute_name );
+                    bool is_method_logable = is_type_logable || method_definition.CustomAttributes.Any( a => a.AttributeType.FullName == log_attribute_name );
 
                     if ( is_method_logable )
                     {
